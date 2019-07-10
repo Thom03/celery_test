@@ -1,0 +1,16 @@
+
+
+{% extends 'demo/base.html' %}
+{% block title %}Celery Test{% endblock %}
+{% block test_active %}active{% endblock %}
+
+{% block body %}
+<div class="row">
+  <div class="col-sm-8">
+    <div class="page-header">
+      <h2>Watch the numbers change.</h2>
+    </div>
+     <a href="{% url 'demo:start_test' %}" role="button" class="btn btn-primary btn-lg btn-block">Start</a>
+  </div>
+</div>
+{% endblock %}
